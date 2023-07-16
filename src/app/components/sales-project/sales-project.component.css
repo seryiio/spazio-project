@@ -1,0 +1,113 @@
+.container {
+    margin: 1.75em
+}
+
+.title h1 {
+    color: #14213D;
+}
+
+.title h2 {
+    color: #FCA311;
+}
+
+.filter-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1.75em;
+}
+
+.filter-search .search-city {
+    display: flex;
+    gap: 0.75em;
+
+}
+
+.filter-search .search-district {
+    display: flex;
+    gap: 0.75em;
+}
+
+.sales-project-for-city .title-city {
+    font-size: 1.25rem;
+    color: #14213D;
+}
+
+.sales-project-for-city .project-selected {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.25em;
+}
+
+.sales-project-for-city .sales-project {
+    border-radius: 1.25em;
+    padding: 0.75em;
+    background-color: #FFFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sales-project-for-city .sales-project .img-project {
+    flex: 1;
+}
+
+.sales-project-for-city .sales-project .img-project {
+    text-align: center;
+}
+
+.sales-project-for-city .sales-project .img-project img {
+    max-width: 50%;
+    height: auto;
+}
+
+.sales-project-for-city .sales-project .location-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.sales-project-for-city .sales-project .dimension-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+}
+
+.sales-project-for-city .sales-project .dimension-project .minimize-size {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.sales-project-for-city .sales-project .dimension-project .maximize-size {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.sales-project-for-city .sales-project .department-description-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.sales-project-for-city .sales-project .department-description-project .bedroom-project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.sales-project-for-city .sales-project .department-description-project .bathroom-project {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5em;
+}

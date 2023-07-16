@@ -1,0 +1,74 @@
+{
+    "proyectos": [
+        {
+            "id": 1,
+            "nombre": "Proyecto A",
+            "estado": "En Venta",
+            "direccion": "Av. Jose 625",
+            "departamento": "Lima",
+            "provincia": "huaura",
+            "distrito": "huacho",
+            "pais": "Perú",
+            "images": "project_a_image1.jpg"
+        },
+        {
+            "id": 2,
+            "nombre": "Proyecto B",
+            "estado": "Terminado",
+            "direccion": "Av. Maria 625",
+            "departamento": "Lima",
+            "provincia": "huaura",
+            "distrito": "huacho",
+            "pais": "Perú",
+            "images": "project_b_image1.jpg"
+        },
+        {
+            "id": 3,
+            "nombre": "Proyecto C",
+            "estado": "En Venta",
+            "direccion": "Av. Jesus 625",
+            "departamento": "Lima",
+            "provincia": "huaura",
+            "distrito": "huacho",
+            "pais": "Perú",
+            "images": "project_c_image1.jpg"
+        },
+        {
+            "id": 4,
+            "nombre": "Proyecto D",
+            "estado": "Terminado",
+            "direccion": "Av. Rick 625",
+            "departamento": "Lima",
+            "provincia": "huaura",
+            "distrito": "huacho",
+            "pais": "Perú",
+            "images": "project_b_image1.jpg"
+        }
+    ],
+    "departamentos": [
+        {
+            "id": 1,
+            "id_proyecto": 1,
+            "numero": 162,
+            "dimension": "200m2",
+            "tipo": "duplex",
+            "cantidad_dormitorios": 2,
+            "cantidad_baños": 2,
+            "estado": "vendido",
+            "precio": 250000,
+            "images": "project_a_image1.jpg"
+        },
+        {
+            "id": 2,
+            "id_proyecto": 1,
+            "numero": 172,
+            "dimension": "168m2",
+            "tipo": "TIPO A",
+            "cantidad_dormitorios": 2,
+            "cantidad_baños": 1,
+            "estado": "vendido",
+            "precio": 150000,
+            "images": "project_a_image1.jpg"
+        }
+    ]
+}
