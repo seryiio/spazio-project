@@ -2,12 +2,8 @@
     display: none;
 }
 
-.logo {
-    text-align: right;
-}
-
 .logo img {
-    max-width: 50%;
+    width: 10em;
     height: auto;
 }
 
@@ -19,10 +15,10 @@ header {
     justify-content: space-between;
     align-items: center;
     width: auto;
+    height: 3em;
     background-color: #ffffff;
     color: #000000;
     padding: 1.25em;
-    height: 100%;
     box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
     border-radius: .25em;
     z-index: 998;
@@ -91,16 +87,75 @@ header {
 }
 
 .center {
-    display: flex;
     gap: 0.75em;
-    align-items: center;
 }
 
 .center .nav {
     font-size: 0.75em;
     display: flex;
-    gap: 2em;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    gap: 2em;
+}
+
+.nav__container--project{
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    top: 0.5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #14213D;
+    color: white;
+    padding: 20px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 997;
+}
+
+.dropdown__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start center;
+}
+
+.close-dropdown{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-btn--dropdown:hover{
+    cursor: pointer;
+    fill: #FCA311;
+}
+
+.dropdown.mostrarDropdown {
+    transform: translateY(40%);
+}
+
+.dropdown a{
+    margin: 1em;
+    display: flex;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown a:hover{
+    color: #FCA311;
+    font-weight: bold;
 }
 
 .center .nav a {
@@ -113,9 +168,17 @@ header {
     text-decoration: none;
 }
 
-.center .nav a:hover {
+.center .nav a:hover{
     color: #FCA311;
     font-weight: bold;
+}
+
+.nav__container--project:hover{
+    fill: #FCA311;
+}
+
+.center .nav .arrow-down:hover {
+    fill: #FCA311;
 }
 
 
@@ -128,6 +191,18 @@ header {
     padding-right: 2em;
     border-radius: 1em;
     gap: 1em;
+}
+
+.number{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+.number svg{
+    margin-right: 1em;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

@@ -1,4 +1,4 @@
-export interface ISalesProject {
+export interface IDeliveredProject {
     id: number,
     nombre: string,
     tipo: string,

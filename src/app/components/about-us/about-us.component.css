@@ -12,16 +12,15 @@
     overflow-y: auto;
 }
 
-.container-1 {
+.container__1 {
     gap: 1.25em;
     height: 80vh;
 }
 
-.container-1 .rows {
+.container__1 .rows {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
     text-align: center;
     height: auto;
     background-image: url("../../../assets/img/Background/wave.svg");
@@ -30,7 +29,7 @@
     background-repeat: no-repeat;
 }
 
-.container-1 .rows .row-1 {
+.container__1 .rows .row-1 {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -39,33 +38,41 @@
     z-index: 2;
     justify-content: center;
     text-align: left;
-    padding: 1em 1em 1em 1em;
+    padding: 1em 1em 1em 2em;
     height: 100%;
+    gap: 2.5em;
 }
 
-.container-1 .rows .row-1 .title {
+.container__1 .rows .row-1 .title {
     text-align: left;
+    border-bottom-width: 0.15em;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    width: 10%;
+    font-size: 2em;
 }
 
-.container-1 .rows .row-1 .description {
+.container__1 .rows .row-1 .description {
     text-align: left;
+    letter-spacing: 0.05em;
 }
 
-.container-1 .row-2 {
+.container__1 .row-2 {
     display: flex;
     flex: 1;
     overflow: hidden;
     z-index: -1;
 }
 
-.container-1 .row-2 img {
+.container__1 .row-2 img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.container-1 .columns {
+.container__1 .columns {
     position: relative;
-    bottom: 8em;
+    bottom: 5em;
+    padding: 1em;
     height: auto;
     display: flex;
     justify-content: center;
@@ -73,22 +80,20 @@
     z-index: 3;
 }
 
-.container-1 .column-1 {
-    border-radius: 1em;
+.container__1 .column-1 {
     background: #ffffff;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin: 4em 4em 4em 4em;
+    padding: 0.5em;
     border-radius: 1em;
-    width: auto;
-    height: 8em;
+    width: 50em;
+    height: 7em;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
     text-align: center;
 }
 
-.container-1 .column-1 h2 {
+.container__1 .column-1 h2 {
     color: #FCA311;
     font-size: 2em;
     font-style: normal;
@@ -96,10 +101,10 @@
     line-height: normal;
 }
 
-.container-1 .column-1 p {
+.container__1 .column-1 p {
     color: #000;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 1.5em;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -113,65 +118,73 @@
     margin-right: 1em;
 }
 
-.container-2 {
+.container__2 {
     display: flex;
     flex-direction: column;
-    margin: 1em 1em 1em 1em;
-    padding: 1.75em;
-    gap: 2em;
+    margin-top: 1em;
+    padding: 5em 10em 5em 10em;
+    gap: 5em;
     justify-content: center;
     align-items: center;
 }
 
-.container-2 .mission {
+.container__2 .mission {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
     gap: 1.25em;
 }
 
-.container-2 .mission .row-1 {
-    gap: 1.25em;
+.container__2 .mission .row-1 {
+    display: grid;
+    gap: 1em;
 }
 
-.container-2 .mission .row-2 {
+.container__2 .mission .row-1 h2 {
+    color: #fca311;
+}
+
+.container__2 .mission .row-2 {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    text-align: right;
+    text-align: center;
 }
 
-.container-2 .mission .row-2 img {
-    max-width: 75%;
-    height: 100%;
+.container__2 .mission .row-2 img {
+    max-width: 50%;
+    height: auto;
 }
 
-.container-2 .vision {
+.container__2 .vision {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center;
     align-items: center;
     text-align: right;
     gap: 1.25em;
 }
 
-.container-2 .vision .row-1 {
+.container__2 .vision .row-1 {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    text-align: right;
+    text-align: center;
 }
 
-.container-2 .vision .row-1 img {
-    max-width: 75%;
-    height: 100%;
-    display: flex;
-    left: 0;
+.container__2 .vision .row-1 img {
+    max-width: 50%;
+    height: auto;
 }
 
-.container-2 .vision .row-2 {
-    gap: 1.25em;
+.container__2 .vision .row-2 {
+    display: grid;
+    gap: 1em;
+    text-align: left;
+}
+
+.container__2 .vision .row-2 h2 {
+    color: #fca311;
 }
 
 .container-3 {
@@ -179,13 +192,13 @@
 }
 
 .container-3 h1 {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .container-3 .cards {
     display: grid;
-    margin: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.25em;
     align-items: center;
     text-align: center;
@@ -193,12 +206,39 @@
     gap: 1.25em;
 }
 
+.container-3 .card-description h2 {
+    margin: 0.5em;
+    color: #FCA311;
+}
+
 .container-3 .card-description {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     height: 10em;
     box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
     border-radius: 1.25em;
+    padding: 2em;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container__1 .rows {
+        background-image: none;
+    }
+
+    .container__1 .rows .row-1 {
+        background-color: #FCA311;
+    }
+}
+
+@media (max-width: 768px) {
+    .container__1 .rows {
+        background-image: none;
+    }
+
+    .container__1 .rows .row-1 {
+        background-color: #FCA311;
+    }
 }

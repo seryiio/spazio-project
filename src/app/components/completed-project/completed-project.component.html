@@ -1,0 +1,49 @@
+<div class="container" *ngIf="onDepartmentSelected !== undefined">
+    <div class="title">
+        <h1>PROYECTOS DE CONSTRUCCIÓN TERMINADOS</h1>
+        <H2>Creando espacios donde vivir</H2>
+    </div>
+    <div class="search">
+        <div class="search__select">
+            <div class="search__select search__inputs--department">
+                <p>Departamento:</p>
+                <mat-form-field>
+                    <mat-label>Departamento</mat-label>
+                    <mat-select>
+                        <mat-option *ngFor="let atributo of projects" [value]="atributo.departamento">{{atributo.departamento}}</mat-option>
+                    </mat-select>
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="project__projectfordepartment" *ngFor="let atributo of filteredProjects">
+            <div class="project__projectfordepartment project__projectfordepartment--title" *ngIf="atributo.tipo == 'construccion'">
+                <h1>{{atributo.departamento}}</h1>
+            </div>
+            <div class="project__projectfordepartment project__projectfordepartment--cards" *ngIf="atributo.tipo == 'construccion'">
+                <div class="project__projectfordepartment--cards--card">
+                    <div class="img-project">
+                        <img [src]="atributo.images" alt="atributo.nombre">
+                    </div>
+                    <div class="location-project">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
+                            <path
+                                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                        </svg>
+                        <p>{{atributo.direccion}}</p>
+                    </div>
+                    <div class="dimension-project">
+                        <div class="maximize-size">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                                <path
+                                    d="M200 32H56C42.7 32 32 42.7 32 56V200c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l40-40 79 79-79 79L73 295c-6.9-6.9-17.2-8.9-26.2-5.2S32 302.3 32 312V456c0 13.3 10.7 24 24 24H200c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-40-40 79-79 79 79-40 40c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H456c13.3 0 24-10.7 24-24V312c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2l-40 40-79-79 79-79 40 40c6.9 6.9 17.2 8.9 26.2 5.2s14.8-12.5 14.8-22.2V56c0-13.3-10.7-24-24-24H312c-9.7 0-18.5 5.8-22.2 14.8s-1.7 19.3 5.2 26.2l40 40-79 79-79-79 40-40c6.9-6.9 8.9-17.2 5.2-26.2S209.7 32 200 32z" />
+                            </svg>
+                            <p>Área: {{atributo.area}}m2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

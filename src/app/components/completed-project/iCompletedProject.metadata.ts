@@ -1,4 +1,4 @@
-export interface ISalesProject {
+export interface ICompletedProject {
     id: number,
     nombre: string,
     tipo: string,
@@ -7,8 +7,7 @@ export interface ISalesProject {
     departamento: string,
     provincia: string,
     distrito: string,
+    area: number,
     pais: string,
-    areaMenor: number,
-    areaMayor: number,
     images: string
 }

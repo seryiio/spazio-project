@@ -23,9 +23,9 @@
     padding: 0.5em;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     text-align: center;
-    gap: 2em;
+    gap: 1.75em;
 }
 
 .search__select mat-form-field {
@@ -39,47 +39,42 @@
 
 }
 
-.search__inputs--district {
-    display: flex;
-    gap: 0.75em;
-}
-
 .project {
     margin: 1.75em;
 }
 
-.project__projectforcity .project__projectforcity--title {
+.project__projectfordepartment--title {
     font-size: 1.25rem;
     color: #14213D;
 }
 
-.project__projectforcity .project__projectforcity--selected {
+.project__projectfordepartment--cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.25em;
 }
 
-.project__projectforcity .sales-project {
+.project__projectfordepartment--cards--card {
     border-radius: 1.25em;
     padding: 0.75em;
     background-color: #FFFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.project__projectforcity .sales-project .img-project {
+.project__projectfordepartment--cards--card .img-project {
     flex: 1;
 }
 
-.project__projectforcity .sales-project .img-project {
+.project__projectfordepartment--cards--card .img-project {
     text-align: center;
 }
 
-.project__projectforcity .sales-project .img-project img {
+.project__projectfordepartment--cards--card .img-project img {
     max-width: 50%;
     height: auto;
 }
 
-.project__projectforcity .sales-project .location-project {
+.project__projectfordepartment--cards--card .location-project {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -87,29 +82,29 @@
     gap: 0.5em;
 }
 
-.project__projectforcity .sales-project .dimension-project {
+.project__projectfordepartment--cards--card .dimension-project {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0.75em;
+    gap: 1em;
 }
 
-.project__projectforcity .sales-project .dimension-project .minimize-size {
+.project__projectfordepartment--cards--card .dimension-project .minimize-size {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.5em;
 }
 
-.project__projectforcity .sales-project .dimension-project .maximize-size {
+.project__projectfordepartment--cards--card .dimension-project .maximize-size {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.5em;
 }
 
-.project__projectforcity .sales-project .department-description-project {
+.project__projectfordepartment--cards--card .department-description-project {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -117,14 +112,14 @@
     gap: 0.5em;
 }
 
-.project__projectforcity .sales-project .department-description-project .bedroom-project {
+.project__projectfordepartment--cards--card .department-description-project .bedroom-project {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 0.5em;
 }
 
-.project__projectforcity .sales-project .department-description-project .bathroom-project {
+.project__projectfordepartment--cards--card .department-description-project .bathroom-project {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -132,13 +127,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .search__select {
-        grid-template-columns: auto;
+    .project__projectfordepartment--cards--card .img-project img {
+        max-width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-    .search__select {
-        grid-template-columns: auto;
+    .project__projectfordepartment--cards--card .img-project img {
+        max-width: 100%;
     }
 }

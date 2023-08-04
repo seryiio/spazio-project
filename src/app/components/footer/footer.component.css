@@ -1,5 +1,151 @@
 footer {
+    display: flex;
+    flex-direction: column;
     background-color: #fca311;
     padding: 10px;
     text-align: center;
+}
+
+.container__rows {
+    display: grid;
+    grid-template-columns: 1fr 0.15fr 1fr 0.15fr 1fr;
+    place-items: center;
+    grid-auto-flow: inherit;
+
+}
+
+.container__rows--1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterprise,
+.contact,
+.benefits,
+.complaints-book {
+    display: flex;
+    flex-direction: column;
+}
+
+svg {
+    cursor: pointer;
+    margin: 0.5em;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.phone-number {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-separate-vertical {
+    width: 0.10em;
+    height: 8em;
+    background-color: #000000;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.container__rows--2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0.5em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.container__rows .container__rows--3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.book-and-terms {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.complaints-book {
+    display: flex;
+    flex-direction: row;
+}
+
+.terms {
+    display: flex;
+    flex-direction: row;
+}
+
+.columns {
+    display: flex;
+    padding-left: 15em;
+    padding-right: 15em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.watermark {
+    color: #ffffff74;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .line-separate-vertical {
+        display: none;
+    }
+
+    .columns {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .line-separate-vertical {
+        display: none;
+    }
+
+    .container__rows {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .columns {
+        flex-direction: column;
+    }
 }
