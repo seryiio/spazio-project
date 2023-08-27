@@ -1,9 +1,11 @@
 footer {
     display: flex;
+    width: auto;
+    height: auto;
     flex-direction: column;
     background-color: #fca311;
-    padding: 10px;
     text-align: center;
+    z-index: 999;
 }
 
 .container__rows {
@@ -115,10 +117,12 @@ a:hover {
 
 .columns {
     display: flex;
-    padding-left: 15em;
-    padding-right: 15em;
     flex-direction: row;
+    width: auto;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 2em 0 2em;
+    padding: 0 5em 0 5em;
 }
 
 .watermark {
