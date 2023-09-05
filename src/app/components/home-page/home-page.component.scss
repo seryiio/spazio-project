@@ -256,14 +256,16 @@ div {
 }
 
 .content-item-3 .carousel {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     text-align: center;
 }
 
 .content-item-3 .carousel img {
-    max-width: 50%;
+    max-width:100%;
+    width: 80%;
     height: auto;
+    object-fit: contain;
 }
 
 .btn-whatsapp {
@@ -342,7 +344,7 @@ div {
 
     .title-for-content-2 {
         text-align: left;
-        width: 100%;
+        width: auto;
         border-radius: 0 0 0 0;
     }
 
@@ -360,7 +362,7 @@ div {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.25em;
-        margin: 2em;
+        margin: 1.5em;
     }
 
 
